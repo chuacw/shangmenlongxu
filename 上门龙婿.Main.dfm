@@ -1,0 +1,101 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Margins.Left = 7
+  Margins.Top = 7
+  Margins.Right = 7
+  Margins.Bottom = 7
+  Caption = 'Form1'
+  ClientHeight = 1167
+  ClientWidth = 1882
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -27
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 216
+  TextHeight = 37
+  object StatusBar: TStatusBar
+    Left = 0
+    Top = 1116
+    Width = 1882
+    Height = 51
+    Margins.Left = 7
+    Margins.Top = 7
+    Margins.Right = 7
+    Margins.Bottom = 7
+    Panels = <>
+    SimplePanel = True
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1882
+    Height = 92
+    Margins.Left = 7
+    Margins.Top = 7
+    Margins.Right = 7
+    Margins.Bottom = 7
+    Align = alTop
+    Caption = 'Panel1'
+    TabOrder = 1
+    object btnStart: TButton
+      Left = 0
+      Top = 12
+      Width = 169
+      Height = 56
+      Margins.Left = 7
+      Margins.Top = 7
+      Margins.Right = 7
+      Margins.Bottom = 7
+      Caption = 'Start'
+      TabOrder = 0
+      OnClick = btnStartClick
+    end
+    object btnFixFile: TButton
+      Left = 252
+      Top = 12
+      Width = 169
+      Height = 56
+      Margins.Left = 7
+      Margins.Top = 7
+      Margins.Right = 7
+      Margins.Bottom = 7
+      Caption = 'Fix File'
+      TabOrder = 1
+      OnClick = btnFixFileClick
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 92
+    Width = 1882
+    Height = 1024
+    Margins.Left = 7
+    Margins.Top = 7
+    Margins.Right = 7
+    Margins.Bottom = 7
+    Align = alClient
+    Caption = 'Panel2'
+    TabOrder = 2
+    object EdgeBrowser1: TEdgeBrowser
+      Left = 1
+      Top = 1
+      Width = 1880
+      Height = 1022
+      Margins.Left = 7
+      Margins.Top = 7
+      Margins.Right = 7
+      Margins.Bottom = 7
+      Align = alClient
+      TabOrder = 0
+      AllowSingleSignOnUsingOSPrimaryAccount = False
+      TargetCompatibleBrowserVersion = '117.0.2045.28'
+      UserDataFolder = '%LOCALAPPDATA%\bds.exe.WebView2'
+      OnNavigationCompleted = EdgeBrowser1NavigationCompleted
+    end
+  end
+end

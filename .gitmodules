@@ -1,0 +1,9 @@
+[submodule "dotenv"]
+	path = dotenv
+	url = https://github.com/chuacw/dotenv.git
+[submodule "EdgeBrowser.Utils"]
+	path = EdgeBrowser.Utils
+	url = https://github.com/chuacw/EdgeBrowser.Utils
+[submodule "HTMLp-modern"]
+	path = HTMLp-modern
+	url = https://github.com/chuacw/HTMLp
