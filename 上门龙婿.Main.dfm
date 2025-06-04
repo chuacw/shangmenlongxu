@@ -1,11 +1,11 @@
-object Form1: TForm1
+﻿object frm上门龙婿: Tfrm上门龙婿
   Left = 0
   Top = 0
   Margins.Left = 7
   Margins.Top = 7
   Margins.Right = 7
   Margins.Bottom = 7
-  Caption = 'Form1'
+  Caption = #19978#38376#40857#23167
   ClientHeight = 1167
   ClientWidth = 1882
   Color = clBtnFace

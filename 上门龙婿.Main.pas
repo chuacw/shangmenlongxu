@@ -9,7 +9,7 @@ uses
   HTMLp.HTMLParser, HTMLp.DOMCore, Vcl.ExtCtrls, Vcl.ComCtrls;
 
 type
-  TForm1 = class(TForm)
+  Tfrm上门龙婿 = class(TForm)
     StatusBar: TStatusBar;
     Panel1: TPanel;
     btnStart: TButton;
@@ -38,7 +38,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Form1: Tfrm上门龙婿;
 
 implementation
 
@@ -49,19 +49,19 @@ uses
 
 {$R *.dfm}
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure Tfrm上门龙婿.FormCreate(Sender: TObject);
 begin
   FNextChapterURL := 'https://www.biqvkk.cc/55_55278/24377671.html'; //'https://www.biqvkk.cc/55_55278/24380031.html';
   FHTMLParser := THTMLParser.Create;
   StatusBar.SimplePanel := True;
 end;
 
-procedure TForm1.FormDestroy(Sender: TObject);
+procedure Tfrm上门龙婿.FormDestroy(Sender: TObject);
 begin
   FHTMLParser.Free;
 end;
 
-procedure TForm1.UpdateStatus(const AStatus: string);
+procedure Tfrm上门龙婿.UpdateStatus(const AStatus: string);
 begin
   if TThread.CurrentThread.ThreadID = MainThreadID then
     begin
@@ -76,7 +76,7 @@ begin
     end;
 end;
 
-procedure TForm1.btnFixFileClick(Sender: TObject);
+procedure Tfrm上门龙婿.btnFixFileClick(Sender: TObject);
 var
   LContent: string;
 begin
@@ -90,7 +90,7 @@ begin
   TFile.WriteAllText(LFileName, LContent, TEncoding.UTF8);
 end;
 
-procedure TForm1.btnStartClick(Sender: TObject);
+procedure Tfrm上门龙婿.btnStartClick(Sender: TObject);
 begin
   var LURL := FNextChapterURL;
   StatusBar.SimpleText := Format('Loading %s', [LURL]);
@@ -101,7 +101,7 @@ end;
 {
   <a href="/55_55278/">上门龙婿叶辰萧初然</a> &gt; 第1章 受尽屈辱
 }
-procedure TForm1.DoDataAvailable;
+procedure Tfrm上门龙婿.DoDataAvailable;
 var
   LHTMLBody, LChapterName, LNextChapterURL: string;
   LDocument: TDocument;
@@ -164,7 +164,7 @@ begin
   end;
 end;
 
-procedure TForm1.EdgeBrowser1NavigationCompleted(Sender: TCustomEdgeBrowser;
+procedure Tfrm上门龙婿.EdgeBrowser1NavigationCompleted(Sender: TCustomEdgeBrowser;
   IsSuccess: Boolean; WebErrorStatus: COREWEBVIEW2_WEB_ERROR_STATUS);
 const
   CDocument = 'document.body.outerHTML';

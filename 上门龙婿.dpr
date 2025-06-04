@@ -21,6 +21,7 @@ begin
   ReportMemoryLeaksOnShutdown := True;
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.Title := '上门龙婿';
+  Application.CreateForm(Tfrm上门龙婿, Form1);
   Application.Run;
 end.
